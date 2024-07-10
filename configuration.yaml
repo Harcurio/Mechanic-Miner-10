@@ -1,9 +1,9 @@
 default_settings: null
 behaviors:
-  Move to Goal:
+  MoveToGoal:
     trainer_type: ppo
     hyperparameters:
-      batch_size: 32
+      batch_size: 512
       buffer_size: 2048
       learning_rate: 0.0003
       beta: 0.005
@@ -36,9 +36,9 @@ behaviors:
     init_path: null
     keep_checkpoints: 5
     checkpoint_interval: 50000
-    max_steps: 300000
-    time_horizon: 320
-    summary_freq: 30000
+    max_steps: 700000
+    time_horizon: 64
+    summary_freq: 50000
     threaded: false
     self_play: null
     behavioral_cloning: null
